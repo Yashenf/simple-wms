@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1170.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashen.wms.contraller.ViewAllCustomersFormContraller">
+   <children>
+      <TableView fx:id="customerTbl" layoutY="125.0" prefHeight="954.0" prefWidth="1170.0">
+        <columns>
+          <TableColumn fx:id="cIdCol" prefWidth="115.0" text="Customer Id" />
+          <TableColumn fx:id="cNameCol" prefWidth="203.0" text="Customer Name" />
+            <TableColumn fx:id="cTpCol" prefWidth="203.0" text="Customer T.P" />
+            <TableColumn fx:id="cEmailCol" prefWidth="286.0" text="Customer E-mail" />
+            <TableColumn fx:id="cAddCol" prefWidth="362.0" text="Customer Address" />
+        </columns>
+      </TableView>
+      <Label layoutX="445.0" layoutY="23.0" prefHeight="62.0" prefWidth="230.0" text="View Customers">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

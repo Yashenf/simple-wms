@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1170.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashen.wms.contraller.AddCustomerFormContraller">
+   <children>
+      <Label layoutX="398.0" layoutY="14.0" prefHeight="59.0" prefWidth="354.0" text="Add New Customer" textFill="#130f40">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="151.0" layoutY="281.0" prefHeight="773.0" prefWidth="881.0" style="-fx-background-radius: red; -fx-border-radius: red;" AnchorPane.rightAnchor="153.0">
+         <children>
+            <JFXTextField fx:id="cusIdTxt" layoutX="45.0" layoutY="23.0" prefHeight="40.0" prefWidth="582.0" promptText="Customer Id">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="cusNameTxt" layoutX="46.0" layoutY="98.0" prefHeight="43.0" prefWidth="582.0" promptText="Customer Name">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="cusTpTxt" layoutX="45.0" layoutY="184.0" prefHeight="43.0" prefWidth="582.0" promptText="TelePhone Number">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="cusEmailTxt" layoutX="48.0" layoutY="266.0" prefHeight="43.0" prefWidth="582.0" promptText="Email">
+               <font>
+                  <Font size="22.0" />
+               </font></JFXTextField>
+            <JFXButton layoutX="697.0" layoutY="640.0" onAction="#submitBtnOnAction" prefHeight="51.0" prefWidth="125.0" style="-fx-background-color: #5352ed;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="countryCmb" layoutX="45.0" layoutY="356.0" prefHeight="31.0" prefWidth="278.0" promptText="country" />
+            <JFXComboBox fx:id="stateCmb" layoutX="377.0" layoutY="356.0" prefHeight="31.0" prefWidth="258.0" promptText="state" />
+            <JFXComboBox fx:id="cityCmb" layoutX="45.0" layoutY="440.0" prefHeight="31.0" prefWidth="278.0" promptText="city" />
+            <JFXComboBox fx:id="zipCmb" layoutX="377.0" layoutY="440.0" prefHeight="31.0" prefWidth="258.0" promptText="zip" />
+            <JFXTextField fx:id="noTxt" layoutX="48.0" layoutY="516.0" prefHeight="48.0" prefWidth="582.0" promptText="No    ex(304/A)">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="streetTxt" layoutX="48.0" layoutY="592.0" prefHeight="48.0" prefWidth="582.0" promptText="Street">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="136.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/new.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="988.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/msi.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

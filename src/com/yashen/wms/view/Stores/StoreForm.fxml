@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1170.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashen.wms.contraller.StoreForm">
+   <children>
+      <TableView fx:id="storeTbl" layoutY="144.0" prefHeight="936.0" prefWidth="462.0">
+        <columns>
+          <TableColumn fx:id="noCol" prefWidth="75.0" text="No" />
+          <TableColumn fx:id="storeIdCol" prefWidth="75.0" text="Store Id" />
+            <TableColumn fx:id="locationCol" prefWidth="311.0" text="Location" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="535.0" layoutY="145.0" prefHeight="321.0" prefWidth="612.0" style="-fx-background-color: white;">
+         <children>
+            <JFXComboBox fx:id="storeIdCmb" layoutX="32.0" layoutY="64.0" onAction="#storeIdCmbOnAction" prefHeight="31.0" prefWidth="541.0" promptText="Store Id" />
+            <JFXTextField fx:id="storeLocationUpdateTxt" layoutX="32.0" layoutY="133.0" prefHeight="74.0" prefWidth="541.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="331.0" layoutY="256.0" onAction="#updateBtnOnAction" style="-fx-background-color: green;" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="488.0" layoutY="256.0" onAction="#deleteOnAction" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="535.0" layoutY="629.0" prefHeight="321.0" prefWidth="612.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="storeIdSaveTxt" layoutX="40.0" layoutY="62.0" prefHeight="31.0" prefWidth="533.0" />
+            <JFXTextField fx:id="storeLocationSaveTxt" layoutX="40.0" layoutY="124.0" prefHeight="74.0" prefWidth="541.0" />
+            <JFXButton layoutX="462.0" layoutY="261.0" onAction="#saveBtnOnAction" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: blue;" text="save" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="449.0" layoutY="27.0" prefHeight="41.0" prefWidth="219.0" text="Stores">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="385.0" layoutY="66.0" prefWidth="200.0" />
+      <Label layoutX="732.0" layoutY="96.0" prefHeight="41.0" prefWidth="219.0" text="Update Store">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="739.0" layoutY="584.0" prefHeight="41.0" prefWidth="219.0" text="Add New Store">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

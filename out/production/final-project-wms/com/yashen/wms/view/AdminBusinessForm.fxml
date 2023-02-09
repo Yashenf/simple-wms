@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminBusinessContext" prefHeight="1080.0" prefWidth="1542.0" style="-fx-background-color: white;" stylesheets="@../assets/styles/Admin-Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashen.wms.contraller.AdminBusinessFormContraller">
+   <children>
+      <Circle fill="#ff4757" layoutX="225.0" layoutY="213.0" onMouseClicked="#manageCustomerOnAction" radius="184.0" stroke="BLACK" strokeType="INSIDE" styleClass="circle-btn" />
+      <Circle fill="WHITE" layoutX="235.0" layoutY="223.0" onMouseClicked="#manageCustomerOnAction" radius="184.0" stroke="BLACK" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <ImageView fitHeight="300.0" fitWidth="421.0" layoutX="66.0" layoutY="60.0" onMouseClicked="#manageCustomerOnAction" pickOnBounds="true" preserveRatio="true" styleClass="circle-btn">
+         <image>
+            <Image url="@../assets/images/Screenshot__58_-removebg-preview.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Circle fill="#ff4757" layoutX="237.0" layoutY="798.0" radius="184.0" stroke="BLACK" strokeType="INSIDE" styleClass="circle-btn">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle fill="WHITE" layoutX="247.0" layoutY="808.0" radius="184.0" stroke="BLACK" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <ImageView fitHeight="389.0" fitWidth="401.0" layoutX="108.0" layoutY="610.0" onMouseClicked="#managePackageOnAction" pickOnBounds="true" preserveRatio="true" styleClass="circle-btn">
+         <image>
+            <Image url="@../assets/images/15589703_5610066-removebg-preview.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Circle fill="#ff4757" layoutX="694.0" layoutY="535.0" radius="184.0" stroke="BLACK" strokeType="INSIDE" styleClass="circle-btn">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle fill="WHITE" layoutX="704.0" layoutY="545.0" radius="184.0" stroke="BLACK" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <ImageView fitHeight="395.0" fitWidth="395.0" layoutX="504.0" layoutY="338.0" onMouseClicked="#manageShippingOnAction" pickOnBounds="true" preserveRatio="true" styleClass="circle-btn">
+         <image>
+            <Image url="@../assets/images/12291389_Wavy_Tsp-04_Single-11-removebg-preview.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Circle fill="#ff4757" layoutX="1155.0" layoutY="223.0" radius="184.0" stroke="BLACK" strokeType="INSIDE" styleClass="circle-btn">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle fill="WHITE" layoutX="1165.0" layoutY="233.0" onDragDetected="#manageOrderOnAction" radius="184.0" stroke="BLACK" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <ImageView fitHeight="352.0" fitWidth="360.0" layoutX="1010.0" layoutY="45.0" onDragDetected="#manageOrderOnAction" onMouseClicked="#manageOrderOnAction" pickOnBounds="true" preserveRatio="true" styleClass="circle-btn">
+         <image>
+            <Image url="@../assets/images/16485210_5739256-removebg-preview.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Circle fill="#ff4757" layoutX="1139.0" layoutY="793.0" radius="184.0" stroke="BLACK" strokeType="INSIDE" styleClass="circle-btn">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle fill="WHITE" layoutX="1149.0" layoutY="803.0" radius="184.0" stroke="BLACK" strokeType="INSIDE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <ImageView fitHeight="421.0" fitWidth="445.0" layoutX="990.0" layoutY="588.0" onMouseClicked="#manageStoreOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/imgabc.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="405.0" text="Manage Customers">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="949.0" text="Manage Packages">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="651.0" layoutY="741.0" text="Shipping &amp; Delivery">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="1232.0" layoutY="403.0" text="Manage Orders">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="1253.0" layoutY="943.0" prefHeight="39.0" prefWidth="203.0" text="Manage Store">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1170.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashen.wms.contraller.UpdateAccountFormContraller">
+   <children>
+      <Label layoutX="487.0" layoutY="53.0" text="update your profile">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="495.0" layoutY="103.0" prefWidth="200.0" />
+      <JFXTextField fx:id="firstNameTxt" layoutX="174.0" layoutY="360.0" prefHeight="31.0" prefWidth="354.0" promptText="First Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lastNameTxt" layoutX="664.0" layoutY="360.0" prefHeight="31.0" prefWidth="354.0" promptText="Last Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordTxt" layoutX="657.0" layoutY="460.0" prefHeight="31.0" prefWidth="361.0" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField fx:id="emailTxt" layoutX="181.0" layoutY="460.0" prefHeight="31.0" prefWidth="354.0" promptText="Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="mobileNoTxt" layoutX="657.0" layoutY="560.0" prefHeight="39.0" prefWidth="361.0" promptText="Mobile No">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="accountTypeCmb" layoutX="181.0" layoutY="564.0" prefHeight="31.0" prefWidth="354.0" promptText="Account Type" />
+      <JFXButton layoutX="664.0" layoutY="796.0" onAction="#updateBtnOnAction" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: blue;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="99.0" fitWidth="121.0" layoutX="1045.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/msi.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="userNameCmb" layoutX="174.0" layoutY="263.0" onAction="#userNameCmbOnAction" prefHeight="31.0" prefWidth="354.0" promptText="Username" />
+      <JFXButton layoutX="887.0" layoutY="796.0" onAction="#deleteBtnOnAction" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

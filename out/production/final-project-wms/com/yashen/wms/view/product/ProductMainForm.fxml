@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1080.0" prefWidth="1542.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashen.wms.contraller.ProductMainFormOnAction">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="1080.0" prefWidth="350.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="83.0" layoutY="44.0" prefHeight="47.0" prefWidth="160.0" text="Manage Products" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="21.0" layoutY="404.0" onAction="#addNewProductOnAction" prefHeight="47.0" prefWidth="315.0" style="-fx-background-color: yellow; -fx-background-radius: 20px;" text="Add New Product" />
+            <JFXButton layoutX="19.0" layoutY="465.0" onAction="#viewProductOnAction" prefHeight="47.0" prefWidth="315.0" style="-fx-background-color: yellow; -fx-background-radius: 20px;" text="View Product" />
+            <JFXButton layoutX="20.0" layoutY="527.0" onAction="#updateOnAction" prefHeight="47.0" prefWidth="315.0" style="-fx-background-color: yellow; -fx-background-radius: 20px;" text="Update" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="landingContect" layoutX="350.0" prefHeight="1080.0" prefWidth="1170.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

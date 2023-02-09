@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#itemOnAction" prefHeight="297.0" prefWidth="203.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 25px; -fx-border-radius: 25px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashen.wms.contraller.ItemFormContraller">
+   <children>
+      <ImageView fx:id="itemImage" fitHeight="133.0" fitWidth="200.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@../../assets/images/vga.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="itemNameLbl" layoutX="14.0" layoutY="196.0" prefHeight="49.0" prefWidth="173.0" text="gtx 1050 Ti">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemPriceLbl" layoutX="113.0" layoutY="244.0" prefHeight="58.0" prefWidth="87.0" text="299.99">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="257.0" prefHeight="31.0" prefWidth="14.0" text="\$">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="proIdLbl" layoutX="23.0" layoutY="176.0" prefHeight="21.0" prefWidth="129.0" text="p001" />
+   </children>
+</AnchorPane>

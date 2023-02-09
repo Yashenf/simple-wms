@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1542.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yashen.wms.contraller.StoreMainFormCopntraller">
+   <children>
+      <AnchorPane layoutY="14.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #57606f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="103.0" layoutY="40.0" prefHeight="36.0" prefWidth="210.0" text="Manage Stores" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="5.0" layoutY="470.0" onAction="#manageStoresOnAction" prefHeight="54.0" prefWidth="325.0" style="-fx-background-color: #ffbe76; -fx-background-radius: 25px;" text="Manage Stokes">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="5.0" layoutY="534.0" onAction="#viewStokesOnAction" prefHeight="54.0" prefWidth="325.0" style="-fx-background-color: #ffbe76; -fx-background-radius: 25px;" text="view stokes">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="6.0" layoutY="405.0" onAction="#addStoresOnAction" prefHeight="54.0" prefWidth="325.0" style="-fx-background-color: #ffbe76; -fx-background-radius: 25px;" text="Add Store">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="landingContext" layoutX="350.0" layoutY="7.0" prefHeight="1080.0" prefWidth="1170.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
